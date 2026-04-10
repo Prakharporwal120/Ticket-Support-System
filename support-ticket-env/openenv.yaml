@@ -1,0 +1,118 @@
+spec_version: 1
+name: SupportTicketEnv
+version: "1.0.0"
+description: >
+  An OpenEnv-compatible environment that simulates a customer support ticket
+  resolution workflow. An AI agent must categorize, prioritize, resolve, and
+  close customer complaint tickets.
+
+type: text
+port: 8000
+
+entrypoint: "uvicorn app.server:app --host 0.0.0.0 --port 8000"
+
+environment:
+  name: SupportTicketEnv
+  description: Customer support ticket resolution environment.
+
+  action_space:
+    type: object
+    properties:
+      action_type:
+        type: string
+        enum:
+          - categorize_ticket
+          - assign_priority
+          - resolve_ticket
+          - close_ticket
+        description: The type of action to perform on the ticket.
+      value:
+        type: string
+        description: The value for the action (category name, priority level, resolution text, or close reason).
+    required:
+      - action_type
+      - value
+
+  observation_space:
+    type: object
+    properties:
+      ticket_id:
+        type: integer
+        description: Unique ticket identifier.
+      ticket_text:
+        type: string
+        description: Original customer complaint text.
+      category:
+        type: string
+        nullable: true
+        description: Assigned category (null if not yet categorized).
+      priority:
+        type: string
+        nullable: true
+        description: Assigned priority (null if not yet prioritized).
+      status:
+        type: string
+        enum:
+          - open
+          - categorized
+          - prioritized
+          - resolved
+          - closed
+        description: Current ticket status.
+
+  reward_range:
+    min: -0.2
+    max: 0.4
+    description: >
+      Step rewards: correct category +0.4, correct priority +0.3,
+      correct resolution +0.3, wrong action -0.2, repeat action -0.1.
+
+tasks:
+  - name: easy_task
+    description: Correctly categorize a customer support ticket.
+    difficulty: easy
+    max_steps: 3
+    grading:
+      type: deterministic
+      score_range: [0.0, 1.0]
+      criteria: >
+        Score 1.0 if the assigned category matches the expected category.
+        Score 0.0 otherwise.
+
+  - name: medium_task
+    description: Assign the correct priority to a customer support ticket.
+    difficulty: medium
+    max_steps: 3
+    grading:
+      type: deterministic
+      score_range: [0.0, 1.0]
+      criteria: >
+        Score 1.0 if the assigned priority matches the expected priority.
+        Score 0.5 if a valid but incorrect priority is assigned.
+        Score 0.0 otherwise.
+
+  - name: hard_task
+    description: Complete the full ticket resolution workflow (categorize, prioritize, resolve, close).
+    difficulty: hard
+    max_steps: 10
+    grading:
+      type: deterministic
+      score_range: [0.0, 1.0]
+      criteria: >
+        Score is computed as the fraction of correctly completed steps
+        out of 4 required steps (categorize, prioritize, resolve, close).
+        Each step contributes 0.25 to the final score.
+
+runtime:
+  cpu: 2
+  memory: "8GB"
+  timeout: 1200
+
+metadata:
+  author: "SupportTicketEnv Team"
+  license: "MIT"
+  tags:
+    - customer-support
+    - ticket-resolution
+    - openenv
+    - hackathon

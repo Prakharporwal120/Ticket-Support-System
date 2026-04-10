@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "text": "My payment failed and I was still charged twice on my credit card.",
+    "expected_category": "billing",
+    "expected_priority": "high",
+    "status": "in_progress"
+  },
+  {
+    "id": 2,
+    "text": "I cannot log into my account even after resetting my password multiple times.",
+    "expected_category": "account",
+    "expected_priority": "high",
+    "status": "in_progress"
+  },
+  {
+    "id": 3,
+    "text": "The server is down and none of our team members can access the dashboard.",
+    "expected_category": "technical",
+    "expected_priority": "high",
+    "status": "in_progress"
+  },
+  {
+    "id": 4,
+    "text": "I would like to request a refund for my last subscription payment.",
+    "expected_category": "billing",
+    "expected_priority": "medium",
+    "status": "resolved"
+  },
+  {
+    "id": 5,
+    "text": "How do I change the email address associated with my account?",
+    "expected_category": "account",
+    "expected_priority": "low",
+    "status": "resolved"
+  },
+  {
+    "id": 6,
+    "text": "The mobile app keeps crashing whenever I try to open the settings page.",
+    "expected_category": "technical",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 7,
+    "text": "I need help understanding the charges on my latest invoice.",
+    "expected_category": "billing",
+    "expected_priority": "low",
+    "status": "open"
+  },
+  {
+    "id": 8,
+    "text": "Our entire production database is unresponsive and we are losing revenue.",
+    "expected_category": "technical",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 9,
+    "text": "I want to cancel my subscription and delete my account permanently.",
+    "expected_category": "account",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 10,
+    "text": "The checkout page shows an error when I try to apply a discount code.",
+    "expected_category": "billing",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 11,
+    "text": "My package has not arrived even though tracking says it was delivered.",
+    "expected_category": "delivery",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 12,
+    "text": "I want my money back for the defective product I received.",
+    "expected_category": "refund",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 13,
+    "text": "The API keeps returning 500 errors when we try to deploy our integration.",
+    "expected_category": "technical",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 14,
+    "text": "I was charged for a subscription I already cancelled two months ago.",
+    "expected_category": "billing",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 15,
+    "text": "My shipping address is wrong and the order has already been dispatched.",
+    "expected_category": "delivery",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 16,
+    "text": "My paymnt faild and I dont know what happend.",
+    "expected_category": "billing",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 17,
+    "text": "I cannot login and my payment also failed at the same time.",
+    "expected_category": "billing",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 18,
+    "text": "",
+    "expected_category": "technical",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 19,
+    "text": "This is a very very very long complaint message that keeps repeating the same issue over and over again. I have been trying to reach customer support for weeks now and nobody has responded to any of my emails or phone calls. My account has been locked, my payment was charged incorrectly, and the product I ordered never arrived. I am extremely frustrated and I need someone to help me immediately before I escalate this matter further.",
+    "expected_category": "account",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 20,
+    "text": "I need to update my profile information and change my registered phone number.",
+    "expected_category": "account",
+    "expected_priority": "low",
+    "status": "open"
+  },
+  {
+    "id": 21,
+    "text": "Where is my order? It was supposed to arrive three days ago.",
+    "expected_category": "delivery",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 22,
+    "text": "The page is loading very slowly and sometimes shows a blank screen.",
+    "expected_category": "technical",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 23,
+    "text": "I want a refund because the service did not work as advertised.",
+    "expected_category": "refund",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 24,
+    "text": "Please help me signup for a new account I am having trouble with the registration form.",
+    "expected_category": "account",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 25,
+    "text": "Can you tell me the price difference between the basic and premium plans?",
+    "expected_category": "billing",
+    "expected_priority": "low",
+    "status": "open"
+  },
+  {
+    "id": 26,
+    "text": "Someone accessed my account without my permission and changed my password.",
+    "expected_category": "security",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 27,
+    "text": "My subscription was auto-renewed even though I turned off auto-renew.",
+    "expected_category": "subscription",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 28,
+    "text": "I placed an order three days ago but there is no tracking number yet.",
+    "expected_category": "order",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 29,
+    "text": "The payment page keeps timing out whenever I try to complete my purchase.",
+    "expected_category": "payment",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 30,
+    "text": "I keep getting a login error that says my credentials are invalid but I know my password.",
+    "expected_category": "login",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 31,
+    "text": "I received a suspicious email asking me to verify my account details immediately.",
+    "expected_category": "security",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 32,
+    "text": "My monthly subscription charge was doubled this month without any notice.",
+    "expected_category": "subscription",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 33,
+    "text": "I ordered two items but only received one. The second item is missing.",
+    "expected_category": "order",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 34,
+    "text": "The refund I requested two weeks ago still has not appeared in my bank account.",
+    "expected_category": "refund",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 35,
+    "text": "Two-factor authentication is not sending the verification code to my phone.",
+    "expected_category": "login",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 36,
+    "text": "I noticed unauthorized transactions on my account totaling over five hundred dollars.",
+    "expected_category": "security",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 37,
+    "text": "How do I upgrade my subscription from the basic plan to the enterprise plan?",
+    "expected_category": "subscription",
+    "expected_priority": "low",
+    "status": "open"
+  },
+  {
+    "id": 38,
+    "text": "The product I ordered is completely different from what was shown on the website.",
+    "expected_category": "order",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 39,
+    "text": "My credit card was charged but the payment status shows failed in my dashboard.",
+    "expected_category": "payment",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 40,
+    "text": "I am locked out of my account after too many failed login attempts.",
+    "expected_category": "login",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 41,
+    "text": "The delivery driver left my package at the wrong address.",
+    "expected_category": "delivery",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 42,
+    "text": "I think my account was hacked because I see orders I never placed.",
+    "expected_category": "security",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 43,
+    "text": "I want to downgrade my subscription but the option is greyed out.",
+    "expected_category": "subscription",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 44,
+    "text": "My order was cancelled without any explanation or notification.",
+    "expected_category": "order",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 45,
+    "text": "The payment went through twice and I was double charged for the same item.",
+    "expected_category": "payment",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 46,
+    "text": "I cannot reset my password because the reset link has expired.",
+    "expected_category": "login",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 47,
+    "text": "The file upload feature keeps failing with a generic error message.",
+    "expected_category": "technical",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 48,
+    "text": "I need a partial refund because one of the items I received was damaged.",
+    "expected_category": "refund",
+    "expected_priority": "medium",
+    "status": "open"
+  },
+  {
+    "id": 49,
+    "text": "My delivery was marked as complete but the package was empty.",
+    "expected_category": "delivery",
+    "expected_priority": "high",
+    "status": "open"
+  },
+  {
+    "id": 50,
+    "text": "The website shows my subscription as active but I am blocked from using premium features.",
+    "expected_category": "subscription",
+    "expected_priority": "high",
+    "status": "open"
+  }
+]
